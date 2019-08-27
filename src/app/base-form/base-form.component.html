@@ -1,0 +1,19 @@
+<form [formGroup]="basicFormGroup" (ngSubmit)="bindForm()">
+  
+  <label>
+    First Name:
+    <input type="text"  formControlName="firstName">
+  </label>
+
+  <label>
+    Last Name:
+    <input type="text" formControlName="lastName">
+  </label>
+
+  <button type="submit">Save</button>
+
+</form>
+
+<div>
+  <b>{{output}}</b>
+</div>
